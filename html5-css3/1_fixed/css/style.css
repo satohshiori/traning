@@ -1,0 +1,89 @@
+body {
+  width: 320px;
+  margin: 0 auto;
+  font-size: 12px;
+  text-align: center;
+}
+
+header {
+  background-color: #e53935;
+  color: #fff;
+  padding-bottom: 15px;
+}
+
+p.header_font {
+  font-family: "Caveat";
+  font-weight: Bold;
+  font-size: 48px;
+  margin: 10px;
+}
+
+img.header_logo {
+  width: 240px;
+  margin-top: 10px;
+}
+
+.search {
+  background-color: #fbc02d;
+  color: #6f6a6e;
+  padding-top: 20px;
+}
+
+input.text_form {
+  width: 196px;
+  box-sizing: border-box;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  height: 30px;
+}
+
+button {
+  width: 96px;
+  height: 30px;
+}
+
+i.fab:nth-of-type(n+2) {
+  margin-left: 10px;
+}
+
+.icon {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.skills {
+  background-color: #8bc34a;
+  color: #6f6a6e;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+p.section {
+  font-weight: Bold;
+  font-size: 19px;
+  margin-bottom: 30px;
+}
+
+p.skills_font {
+  color: #000;
+}
+
+.picture {
+  width: 180px;
+  border: solid 1px;
+  box-sizing: border-box;
+  border-color: #6f6a6e;
+  border-radius: 3px;
+}
+
+footer {
+  background-color: #1976d2;
+  color: #fff;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+img.footer_icon {
+  width: 160px;
+  margin-bottom: 15px;
+}

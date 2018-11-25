@@ -1,0 +1,22 @@
+.switch__condition {
+  color: gray;
+  font-size: 2rem;
+}
+
+.on {
+  color: red;
+}
+
+.count {
+  font-size: 1.5rem;
+}
+
+.num-box {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  border: 1px solid #eee;
+}
+
+.bg-num {
+  background-color: #ffc107 !important;
+}

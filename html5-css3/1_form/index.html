@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta http-equiv="content-type" charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+  <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet" type="text/css">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Web開発 - 入力フォーム</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <ul>
+        <li class="header_list">
+          <div class="header_logo">
+            <h1>
+              <img class="eras" src="img/logo.png" alt="ERAS">
+            </h1>
+            <div class="home_icon">
+            </div>
+          </div>
+        </li>
+        <li class="header_list">
+          <div class="header_tel">
+            <p>お問い合わせはこちらまで</p>
+            <div class="header_tel_parts">
+              <p>受付 10:00 ～ 19:00（平日）
+                <a href="tel:0364355678">Tel:03-6435-5678</a>
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <h2>申込フォーム</h2>
+      <ul>
+        <li class="form">
+          <div class="form_menu">
+            <div class="form_set">
+              <p>興味のある事業内容</p>
+              <div class="badge required">
+                <p>必須</p>
+              </div>
+            </div>
+          </div>
+          <ul>
+            <li class="choice">
+              <input type="checkbox" name="development" value="web">ウェブサイトの開発</li>
+            <li class="choice">
+              <input type="checkbox" name="development" value="app">アプリケーションの開発</li>
+            <li class="choice">
+              <input type="checkbox" name="development" value="AI">AIの開発
+            </li>
+          </ul>
+        </li>
+
+        <li class="form">
+          <div class="form_menu">
+            <div class="form_set">
+              <p>興味がある開発工程</p>
+              <div class="badge required">
+                <p>必須</p>
+              </div>
+            </div>
+          </div>
+
+          <ul>
+            <li class="choice">
+              <input type="checkbox" name="process" value="front">フロントエンド
+            </li>
+            <li class="choice">
+              <input type="checkbox" name="process" value="back">バックエンド
+            </li>
+          </ul>
+        </li>
+        <li class="form">
+          <div class="form_menu">
+            <div class="form_set">
+              <p>氏名（漢字）</p>
+              <div class="badge required">
+                <p>必須</p>
+              </div>
+            </div>
+          </div>
+          <div class="form_cover">
+            <input class="text_form" type="text" name="fullname">
+            <p>例）山田　太郎（姓と名の間にスペースを入れてください）</p>
+          </div>
+        </li>
+        <li class="form">
+          <div class="form_menu">
+            <div class="form_set">
+              <p>氏名（フリガナ）</p>
+              <div class="badge required">
+                <p>必須</p>
+              </div>
+            </div>
+          </div>
+          <div class="form_cover">
+            <input class="text_form" type="text" name="katakana_fullname">
+            <p>例）ヤマダ　タロウ（姓と名の間にスペースを入れてください）</p>
+          </div>
+        </li>
+
+        <li class="form">
+          <div class="form_menu">
+            <div class="form_set">
+              <p>生年月日</p>
+              <div class="badge optional">
+                <p>任意</p>
+              </div>
+            </div>
+          </div>
+          <div class="form_cover">
+            <input class="text_form" type="text" name="birthday" placeholder="　年　/月/日">
+          </div>
+        </li>
+
+        <li class="form">
+          <div class="form_menu">
+            <div class="form_set">
+              <p>年齢</p>
+              <div class="badge optional">
+                <p>任意</p>
+              </div>
+            </div>
+          </div>
+          <div class="form_cover">
+            <div class="form_sub">
+              <input class="text_form age" type="text" name="age">
+              <div class="side age">
+                <p>歳</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="form">
+          <div class="form_menu">
+            <div class="form_set">
+              <p>性別</p>
+              <div class="badge optional">
+                <p>任意</p>
+              </div>
+            </div>
+          </div>
+          <div class="form_cover">
+            <div class="radio_wrap">
+              <label>
+                <input type="radio" name="gender" value="man">男性
+              </label>
+              <label>
+                <input type="radio" name="gender" value="women">女性
+              </label>
+            </div>
+          </div>
+        </li>
+
+        <li class="form">
+          <div class="form_menu">
+            <div class="form_set">
+              <p>現住所</p>
+              <div class="badge required">
+                <p>必須</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="form_cover">
+            <div class="form_sub">
+              <div class="side adress">
+                <p>〒</p>
+              </div>
+              <input class="text_form adress" type="text" name="fill">
+            </div>
+
+            <p>例）1060044（ハイフン不要）</p>
+            <input class="text_form" type="text" name="adress_prefectures" placeholder="都道府県">
+            <p class="note">例）東京都</p>
+            <input class="text_form" type="text" name="adress_cities" placeholder="市区町村丁目番地">
+            <p>例）港区東麻布2-3-5</p>
+            <input class="text_form" type="text" name="adress_building" placeholder="建物名・部屋番号">
+            <p>例）第一ビル　4F</p>
+          </div>
+        </li>
+
+        <li class="form">
+          <div class="form_menu">
+            <div class="form_set">
+              <p>メールアドレス</p>
+              <div class="badge required">
+                <p>必須</p>
+              </div>
+            </div>
+          </div>
+          <div class="form_cover">
+            <input class="text_form" type="text" name="mailadress">
+            <p>確認の為、コピーせずに再度入力して下さい</p>
+            <input class="text_form" type="text" name="mailadress_check">
+          </div>
+        </li>
+
+        <li class="form">
+          <div class="form_menu">
+            <div class="form_set">
+              <p>連絡先</p>
+              <div class="badge required">
+                <p>必須</p>
+              </div>
+            </div>
+          </div>
+          <div class="form_cover">
+            <input class="text_form" type="text" name="phone_number">
+            <p>例）03-6435-5678（ご連絡がつきやすい電話番号）</p>
+          </div>
+        </li>
+
+        <li class="form">
+
+          <div class="form_menu">
+            <div class="form_set">
+              <p>現在の職業</p>
+              <div class="badge required">
+                <p>必須</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="form_cover">
+            <div class="radio_wrap">
+              <label>
+                <input type="radio" class="now_job" name="job" value="high_school">高校生
+              </label>
+              <label>
+                <input type="radio" class="now_job" name="job" value="junior college">短大生
+              </label>
+              <label>
+                <input type="radio" class="now_job" name="job" value="college">大学生
+              </label>
+              <label>
+                <input type="radio" class="now_job" name="job" value=" professional_school">専門学校生
+              </label>
+              <label>
+                <input type="radio" class="now_job" name="job" value="studying_abroad">留学生
+              </label>
+              <label>
+                <input type="radio" class="now_job" name="job" value="office_worker">会社員
+              </label>
+              <label>
+                <input type="radio" class="now_job" name="job" value="part_time_job">アルバイト
+              </label>
+              <label>
+                <input type="radio" class="now_job" name="job" value="other">その他
+              </label>
+            </div>
+
+            <p>学校名</p>
+            <input class="text_form" type="text" name="school">
+
+            <p>現学年</p>
+            <div class="radio_wrap">
+              <label>
+                <input type="radio" name="grade" value="grade1">1年
+              </label>
+              <label>
+                <input type="radio" name="geade" value="grade2">2年
+              </label>
+              <label>
+                <input type="radio" name="grade" value="grade3">3年
+              </label>
+              <label>
+                <input type="radio" name="grade" value="grade4">4年
+              </label>
+              <label>
+                <input type="radio" name="grade" value="other">その他
+              </label>
+            </div>
+          </div>
+        </li>
+
+        <li class="form">
+          <div class="form_menu">
+            <div class="form_set">
+              <p>企業説明会</p>
+              <div class="badge required">
+                <p>必須</p>
+              </div>
+            </div>
+          </div>
+          <div class="form_cover">
+            <div class="radio_wrap">
+              <label>
+                <input type="radio" name="join" value="yes">参加希望
+              </label>
+              <label>
+                <input type="radio" name="join" value="no">不参加
+              </label>
+              <label>
+                <input type="radio" name="join" value="not_clear">まだわからない
+              </label>
+            </div>
+
+            <p>参加希望にチェックされた場合、参加希望の時期を選択して下さい</p>
+            <form type="post" class="day">
+              <select class="month">
+                <option name="period" value="no">まだ決めていない</option>
+                <option name="period" value="4~6">4月〜6月頃</option>
+                <option name="period" value="7~9">7月〜9月頃</option>
+                <option name="period" value="10~12">10月〜12月頃</option>
+                <option name="period" value="1~3">1月〜3月頃</option>
+              </select>
+            </form>
+          </div>
+        </li>
+        <li class="form">
+          <div class="form_menu">
+            <div class="form_set">
+              <p>質問事項</p>
+              <div class="badge optional">
+                <p>任意</p>
+              </div>
+            </div>
+          </div>
+          <div class="form_cover">
+            <textarea class="text_form" type="text" rows="5"></textarea>
+          </div>
+        </li>
+      </ul>
+    </main>
+
+    <footer>
+      <input type="button" class="footer_button" value="確認画面へ">
+    </footer>
+  </div>
+</body>
+
+</html>

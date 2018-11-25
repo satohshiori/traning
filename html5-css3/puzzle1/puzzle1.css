@@ -1,0 +1,36 @@
+.wrapper1 {
+  justify-content: center;
+}
+
+.block1 {
+  width: 1024px;
+  height: 256px;
+  margin: 0 auto;
+  background-color: #e53935;
+}
+
+.block2 {
+  width: 340px;
+  height: 1024px;
+  float: left;
+  background-color: #fbc02d;
+}
+
+.block3 {
+  width: 684px;
+  height: 1024px;
+  float: left;
+  background-color: #8bc34a;
+}
+
+.block4 {
+  width: 1024px;
+  height: 256px;
+  margin: 0 auto;
+  background-color: #1976d2;
+}
+
+.wrapper2 {
+  display: flex;
+  justify-content: center;
+}
